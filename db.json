@@ -1,7 +1,7 @@
 {
     "user": [
         {
-            "userId": 1,
+            "id": 1,
             "name": "Bongbong Marcos",
             "address": "Batangas City",
             "contact": "09956341884",
@@ -9,7 +9,7 @@
             "friends": [2, 3, 4]
         },
         {
-            "userId": 2,
+            "id": 2,
             "name": "Tom Holland",
             "address": "Queens",
             "contact": "2132997343",
@@ -17,7 +17,7 @@
             "friends": [1, 3, 4]
         },
         {
-            "userId": 3,
+            "id": 3,
             "name": "Nicola Tesla",
             "address": "New York",
             "contact": "1287466777",
@@ -25,7 +25,7 @@
             "friends": [1, 2, 4]
         },
         {
-            "userId": 4,
+            "id": 4,
             "name": "Reed Richards",
             "address": "New York",
             "contact": "112328774",
