@@ -10,6 +10,7 @@ export interface Profile {
   export interface Posts {
     postId: number;
     userId: number;
+    name: string;
     date: string;
     description: string;
     comments: Comments[]
@@ -17,5 +18,7 @@ export interface Profile {
 
   export interface Comments {
     userId: number;
+    name: string;
+    date: string;
     comment: string
   }

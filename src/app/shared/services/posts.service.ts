@@ -3,19 +3,19 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
-import { Profile } from '../models/profile.model';
+import { Posts } from '../models/profile.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ProfileService {
-  private profileUrl = 'http://localhost:3000/user';
+export class PostService {
+  private postUrl = 'http://localhost:3000/postList';
 
   constructor(private http: HttpClient) {
   }
 
-  getProfileById(payload: number): Observable<Profile> {
-    return this.http.get<Profile>(`${this.profileUrl}/${payload}`);
+  getPosts(): Observable<Posts[]> {
+    return this.http.get<Posts[]>(this.postUrl);
   }
 
 //   createProfile(payload: Profile): Observable<Profile> {

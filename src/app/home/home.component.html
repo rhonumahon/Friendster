@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="container">
+    <mat-card class="mb-3" *ngFor="let prof of posts$ | async">
+        <h3><b>{{prof.name}}</b></h3>
+        <p>{{prof.date}}</p>
+        <p>{{prof.description}}</p>
+        <div *ngFor="let com of prof.comments" class="ml-3">
+        <h5><b>{{com.name}}</b></h5>
+        <h5>{{com.date}}</h5>
+        <h5>{{com.comment}}</h5>
+        </div>
+    </mat-card>
+</div>
