@@ -1,7 +1,7 @@
 export interface Profile {
     id: number;
     name: string;
-    phone: string;
+    contact: string;
     address: string;
     postIds: number[];
     friends: number[];

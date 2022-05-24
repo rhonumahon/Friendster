@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const routes = [
@@ -16,6 +17,7 @@ const routes = [
   ],
   imports: [
     CommonModule,
+    HttpClientModule,
     RouterModule.forChild(routes)
   ]
 })

@@ -1,1 +1,8 @@
-<p>profile works!</p>
+
+<div class="container">
+    <section *ngIf="profile$ | async as prof">
+        <h1>{{prof.name}}</h1>
+        <ul class="li">Address: {{prof.address}}</ul>
+        <ul class="li">Contact: {{prof.contact}}</ul>
+    </section>
+</div>
