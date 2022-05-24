@@ -1,14 +1,14 @@
 <mat-toolbar color="primary" class="flex justify-between">
     <div>
         <span class="mr-5">Friendster</span>
-        <a mat-button>Home</a>
-        <a mat-button>My Profile</a>
+        <a mat-button routerLink="">Home</a>
+        <a mat-button [routerLink]="['profile', currentUserId]">My Profile</a>
         <a mat-button>Friends</a>
     </div>
-    <div class="justify-self-end" >
-        <div class="flex justify-around">
+    <div class="justify-self-end" > 
+        <div class="flex justify-around" *ngIf="profile$ | async as prof">
             <img src="../../assets/images/profile.jpg" class="w-10 h-10 rounded-full">
-            <a mat-button> Rhon Umahon</a>
+            <a mat-button [routerLink]="['profile', currentUserId]">{{prof.name}}</a>
 
         </div>
         
